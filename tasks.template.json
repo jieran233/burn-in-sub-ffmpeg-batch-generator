@@ -1,0 +1,61 @@
+{
+  "tasks": [
+    {
+      "input": "input_cpu.mp4",
+      "subtitle": "subtitle.srt",
+      "output-format": "mp4",
+      "vcodec": "h264",
+      "acodec": "copy"
+    },
+    {
+      "input": "input_cpu.mp4",
+      "subtitle": "subtitle.ass",
+      "output-format": "mp4",
+      "vcodec": "hevc",
+      "acodec": "copy"
+    },
+    {
+      "input": "input_cpu.mp4",
+      "subtitle": "subtitle.ass",
+      "output-format": "mp4",
+      "vcodec": "av1",
+      "acodec": "copy"
+    },
+    {
+      "input": "input_windows-intel-qsv.mp4",
+      "subtitle": "subtitle.srt",
+      "output-format": "mp4",
+      "vcodec": "h264_qsv",
+      "acodec": "copy"
+    },
+    {
+      "input": "input_windows-nvidia-nvenc.mp4",
+      "subtitle": "subtitle.srt",
+      "output-format": "mp4",
+      "vcodec": "h264_nvenc",
+      "acodec": "copy"
+    },
+    {
+      "input": "input_windows-amd-amf.mp4",
+      "subtitle": "subtitle.srt",
+      "output-format": "mp4",
+      "vcodec": "h264_amf",
+      "acodec": "copy"
+    },
+    {
+      "input": "input_linux-vaapi.mp4",
+      "subtitle": "subtitle.srt",
+      "output-format": "mp4",
+      "vcodec": "h264_vaapi",
+      "acodec": "copy",
+      "vfilter": "format=nv12|vaapi,hwupload"
+    },
+    {
+      "input": "input_raspberrypi-openmax.mp4",
+      "subtitle": "subtitle.srt",
+      "output-format": "mp4",
+      "vcodec": "h264_omx",
+      "acodec": "copy"
+    }
+  ]
+}
